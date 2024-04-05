@@ -8,14 +8,14 @@ import store from "../store/store";
 import { updateDirectChatHistoryIfActive } from "../shared/utils/chat";
 import * as roomHandler from "./roomHandler";
 import * as webRTCHandler from "./webRTCHandler";
-import {updateOnTheRemoteSide} from "../shared/utils/chat"
+import { updateOnTheRemoteSide } from "../shared/utils/chat"
 
 let socket = null;
 
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
 
-  socket = io("http://localhost:5002", {
+  socket = io("https://medimute-consult-test-deploy-tutorial-1.onrender.com", {
     auth: {
       token: jwtToken,
     },
