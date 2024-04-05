@@ -2,7 +2,7 @@ import axios from "axios";
 import { logout } from "./shared/utils/auth";
 
 const apiClient = axios.create({
-  baseURL: "https://medimute-consult-hhhw.onrender.com/api",
+  baseURL: "https://medimute-consult-test-deploy-tutorial-1.onrender.com/api",
   timeout: 1000,
 });
 
